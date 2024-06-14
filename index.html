@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./Assests/6524364_3306567.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+
+        .bg-white-200.p-8.rounded-lg.max-w-lg {
+            background: white;
+        }
+
+        .bg-white-200.p-8.rounded-lg.max-w-lg {
+            border: 2px solid darkgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ----------- Music ------------- -->
+    <audio id="audioPlayer" loop>
+        <source src="game2.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="flex justify-center items-center h-screen ">
+        <div class="bg-white-200 p-8 rounded-lg max-w-lg">
+            <h1 class="text-4xl text-gray-800 font-serif mb-4">Memory Game</h1>
+            <p class="text-lg text-gray-800 font-serif mb-8">Memory games can improve your memory, attention, focus,
+                processing speed, and problem-solving skills. They can also reduce your stress, enhance your mood, and
+                increase your confidence. By playing memory games, you are stimulating your brain cells and
+                strengthening the connections between them.</p>
+            <a href="game.html"
+                class="relative block w-48 bg-black text-white text-center py-3 px-6 rounded-lg hover:bg-white  hover:text-black transition duration-300">
+                <span>PLAY NOW</span>
+            </a>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+
+</html>
